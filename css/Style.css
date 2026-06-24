@@ -1,1 +1,327 @@
+```css
+/* =========================
+   PEDYO LOCAL PREMIUM CSS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#222;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    background:#008751;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FCD116;
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(
+        135deg,
+        #008751,
+        #00a35c
+    );
+    color:white;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+/* SEARCH BOX */
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    width:500px;
+    max-width:100%;
+    padding:18px;
+    border:none;
+    border-radius:10px 0 0 10px;
+    font-size:16px;
+}
+
+.search-box button{
+    background:#FCD116;
+    border:none;
+    padding:18px 25px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:0 10px 10px 0;
+}
+
+/* BUTTONS */
+
+.btn-primary{
+    background:#FCD116;
+    color:#222;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-weight:600;
+    margin-right:10px;
+}
+
+.btn-secondary{
+    background:white;
+    color:#008751;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+/* STATS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:70px 8%;
+}
+
+.stat-box{
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.stat-box h2{
+    color:#008751;
+    font-size:40px;
+}
+
+/* SECTIONS */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+/* CATEGORY CARDS */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.category-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    font-weight:600;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+}
+
+/* BUSINESS CARDS */
+
+.business-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.business-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.business-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.business-card h3,
+.business-card p{
+    padding:10px 20px;
+}
+
+.business-card button{
+    margin:20px;
+    background:#008751;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* WHY US */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.why-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+/* AREAS */
+
+.area-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.area-card{
+    background:#008751;
+    color:white;
+    text-align:center;
+    padding:35px;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:600;
+}
+
+/* CTA */
+
+.business-cta{
+    background:#008751;
+    color:white;
+    text-align:center;
+}
+
+.business-cta p{
+    margin:20px 0 30px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    padding:60px 8%;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.footer-content h3{
+    margin-bottom:15px;
+    color:#FCD116;
+}
+
+.footer-content p{
+    margin-bottom:8px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box input{
+        border-radius:10px;
+        margin-bottom:10px;
+    }
+
+    .search-box button{
+        border-radius:10px;
+    }
+}
+```
 
